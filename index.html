@@ -142,16 +142,23 @@
   <script>
     function calculateAgeAndDays() {
       const dob = new Date('2002-06-26');
-      const singleSince = new Date('2020-01-01'); // Example date when single
+      const singleSince = dob; // Single since birth
       const now = new Date();
 
+      // Calculate age
       const age = now.getFullYear() - dob.getFullYear();
-      const daysSinceSingle = Math.floor((now - singleSince) / (1000 * 60 * 60 * 24));
-      const hoursSinceSingle = Math.floor((now - singleSince) / (1000 * 60 * 60));
-      const minutesSinceSingle = Math.floor((now - singleSince) / (1000 * 60));
-      const secondsSinceSingle = Math.floor((now - singleSince) / 1000);
+      const ageAdjustment = (now < new Date(dob.getFullYear(), now.getMonth(), now.getDate())) ? -1 : 0;
+      const adjustedAge = age + ageAdjustment;
 
-      updateCounter('age', `Age: ${age} years`);
+      // Calculate time since single
+      const timeSinceSingle = now - singleSince;
+      const daysSinceSingle = Math.floor(timeSinceSingle / (1000 * 60 * 60 * 24));
+      const hoursSinceSingle = Math.floor(timeSinceSingle / (1000 * 60 * 60));
+      const minutesSinceSingle = Math.floor(timeSinceSingle / (1000 * 60));
+      const secondsSinceSingle = Math.floor(timeSinceSingle / 1000);
+
+      // Update counters
+      updateCounter('age', `Age: ${adjustedAge} years`);
       updateCounter('days-since-single', `Days since single: ${daysSinceSingle}`);
       updateCounter('hours-since-single', `Hours since single: ${hoursSinceSingle}`);
       updateCounter('minutes-since-single', `Minutes since single: ${minutesSinceSingle}`);
@@ -173,8 +180,10 @@
       });
     }
 
+    // Initialize on page load and update every second
     window.onload = calculateAgeAndDays;
     setInterval(calculateAgeAndDays, 1000);
+
   </script>
 </body>
 </html>

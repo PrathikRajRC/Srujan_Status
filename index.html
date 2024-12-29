@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Srujan</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Srujan Status</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link" href="#status">Status</a>
+          </li>
+          <li class="nav-item ms-3"></li>
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero" class="gradient-background">
+    <div class="hero-con">
+      <div class="hero-text">
+        <h1>Help Srujan S Find a Girlfriend!</h1>
+        <p>He’s tried everything, but he still needs a little push. Can you help him find love (or at least a date)?</p>
+        <a href="#" class="btn btn-primary">Apply Now to Date</a>
+      </div>
+      <div class="hero-right">
+        <div><img src="./srujan/hero.png" alt="Srujan"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="gradient-background">
+
+    <div class="features">
+      <div class="f-left">
+        <h1>Meet the Amazing Srujan S!</h1>
+        <p>He’s not perfect, but he’s perfectly lovable (at least, we think so).</p>
+        <img src="./srujan/cool-removebg-preview.png" alt="">
+      </div>
+      <div class="f-right">
+        <div class="fcard">
+          <img src="./images/game.png" alt="">
+          <h2>Gamer at Heart</h2>
+          <p>Spent 10 hours in a game creating a house he’ll never live in. Dedication at its finest.</p>
+        </div>
+        <div class="fcard">
+          <img src="./images/iphone_644458.png" alt="">
+          <h2>Siri’s Best Friend</h2>
+          <p>Regularly asks Siri dumb questions like ‘What’s the meaning of life?’ and laughs at her responses.</p>
+        </div>
+        <div class="fcard">
+          <img src="./images/cooking.png" alt="">
+          <h2>Cooking Skills</h2>
+          <p>Can make a mean bowl of instant noodles in under 2 minutes. Bonus: He doesn’t burn the house down while doing it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="status" class="gradient-background">
+    <div class="status-container">
+      <div class="status-left">
+        <div class="status-header">
+          <h1 class="status-heading">A Single Man's Journey</h1>
+          <p class="status-quote">"Loneliness isn't the absence of people; it's the absence of purpose."</p>
+        </div>
+        <div class="image-container">
+          <img src="./srujan/sad.jpg" alt="Profile Image" class="profile-image">
+        </div>
+      </div>
+      
+      <div class="status-right">
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="status-icon">⌛</div>
+            <h2 class="name-title">Srujan S</h2>
+            <p class="birth-date">Born: June 26, 2002</p>
+          </div>
+          
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h3 class="stat-title">Age:</h3>
+              <div class="stat-value" id="age">22</div>
+              <div class="stat-label">YEARS</div>
+            </div>
+            
+            <div class="stat-item">
+              <h3 class="stat-title">Days since single:</h3>
+              <div class="stat-value" id="days-since-single">1824</div>
+              <div class="stat-label">DAYS</div>
+            </div>
+            
+            <div class="stat-item">
+              <h3 class="stat-title">Hours since single:</h3>
+              <div class="stat-value" id="hours-since-single">43776</div>
+              <div class="stat-label">HOURS</div>
+            </div>
+            
+            <div class="stat-item">
+              <h3 class="stat-title">Minutes since single:</h3>
+              <div class="stat-value" id="minutes-since-single">2626562</div>
+              <div class="stat-label">MINUTES</div>
+            </div>
+            
+            <div class="stat-item highlight">
+              <h3 class="stat-title">Seconds since single:</h3>
+              <div class="stat-value" id="seconds-since-single">157593720</div>
+              <div class="stat-label">SECONDS</div>
+            </div>
+          </div>
+          
+          <div class="status-badge">
+            Single Status: Active
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    function calculateAgeAndDays() {
+      const dob = new Date('2002-06-26');
+      const singleSince = new Date('2020-01-01'); // Example date when single
+      const now = new Date();
+
+      const age = now.getFullYear() - dob.getFullYear();
+      const daysSinceSingle = Math.floor((now - singleSince) / (1000 * 60 * 60 * 24));
+      const hoursSinceSingle = Math.floor((now - singleSince) / (1000 * 60 * 60));
+      const minutesSinceSingle = Math.floor((now - singleSince) / (1000 * 60));
+      const secondsSinceSingle = Math.floor((now - singleSince) / 1000);
+
+      updateCounter('age', `Age: ${age} years`);
+      updateCounter('days-since-single', `Days since single: ${daysSinceSingle}`);
+      updateCounter('hours-since-single', `Hours since single: ${hoursSinceSingle}`);
+      updateCounter('minutes-since-single', `Minutes since single: ${minutesSinceSingle}`);
+      updateCounter('seconds-since-single', `Seconds since single: ${secondsSinceSingle}`);
+    }
+
+    function updateCounter(elementId, text) {
+      const element = document.getElementById(elementId);
+      element.innerHTML = ''; // Clear existing content
+
+      text.split('').forEach((char) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        element.appendChild(span);
+
+        // Add animation class
+        setTimeout(() => span.classList.add('animate'), 50);
+        setTimeout(() => span.classList.remove('animate'), 300);
+      });
+    }
+
+    window.onload = calculateAgeAndDays;
+    setInterval(calculateAgeAndDays, 1000);
+  </script>
+</body>
+</html>

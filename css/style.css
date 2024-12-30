@@ -314,6 +314,19 @@
   margin-top: 1.5rem;
 }
 
+.status-badge2 {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: rgba(255, 0, 43, 0.1);
+  box-shadow: #00000028 0px 0px 10px;
+  color: crimson;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin: 1rem 0 1rem 0;
+}
+
 @media (max-width: 1024px) {
   .status-container {
     flex-direction: column;

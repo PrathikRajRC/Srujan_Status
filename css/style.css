@@ -13,9 +13,9 @@
   font-family: "Poppins", serif;
 }
 .gradient-background {
-  background: linear-gradient(300deg, #ff3401, #ffffff, #ffd000);
+  background: linear-gradient(300deg, #ff6b6b, #ffcccc);
   background-size: 180% 180%;
-  animation: gradient-animation 10s ease infinite;
+  animation: gradient-animation 15s ease infinite;
 }
 
 @keyframes gradient-animation {
@@ -28,6 +28,13 @@
   100% {
     background-position: 0% 50%;
   }
+}
+/* Navbar Section */
+
+.navbar-img {
+  border-radius: 50%;
+  height: 55px;
+  margin: 0px 10px 0px 0px;
 }
 
 /*Hero Section*/
@@ -318,13 +325,13 @@
   display: inline-block;
   padding: 0.6rem 1.2rem;
   background: rgba(255, 0, 43, 0.1);
-  box-shadow: #00000028 0px 0px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
   color: crimson;
   border-radius: 50px;
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 1px;
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0;
 }
 
 @media (max-width: 1024px) {

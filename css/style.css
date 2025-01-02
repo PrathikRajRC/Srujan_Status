@@ -18,6 +18,10 @@
   animation: gradient-animation 15s ease infinite;
 }
 
+body {
+  padding-top: 60px; /* Adjust this value to match the height of the navbar */
+}
+
 @keyframes gradient-animation {
   0% {
     background-position: 0% 50%;
@@ -30,10 +34,15 @@
   }
 }
 /* Navbar Section */
-
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures it stays above other elements */
+}
 .navbar-img {
   border-radius: 50%;
-  height: 55px;
+  height: 50px;
   margin: 0px 10px 0px 0px;
 }
 
@@ -81,7 +90,7 @@
 
 .hero-img{
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
 }
 
 #funnyModal .modal-content {
@@ -426,6 +435,7 @@
 
   .hero-img {
     width: 100%;
+    max-width: 250px;
   }
 
   .features {
@@ -481,7 +491,8 @@
   }
 
   .hero-img {
-    width: 100%;
+    width: 50%;
+    width: 250px;
   }
 
   .features {

@@ -12,13 +12,14 @@
     --nav-hover: #ffffff;
     --search-bg: #2d2d2d;
 }
+
 /* Main content styles */
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color); /* Background color for PNG image */
-    background-image:url('../images/bac.png'); /* Added the PNG image */
+    background-image: url('../images/bac.png'); /* Added the PNG image */
     background-blend-mode: overlay; /* Blend the color and image */
     background-size: cover; /* Adjust the image size */
     background-position: center top; /* Position the image */
@@ -191,7 +192,6 @@ footer a:hover {
     }
     .container {
         padding: 0 1.5rem;
-
     }
 
     .pricing-grid {
@@ -246,12 +246,10 @@ footer a:hover {
     }
     .pricing-card {
         max-width: 100%;
-        
     }
     .subtitle {
         font-size: 1rem;
         font-weight: 600;
         color: rgb(39, 38, 38);
     }
-
 }

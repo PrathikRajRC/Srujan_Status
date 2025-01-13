@@ -83,3 +83,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
   
+document.addEventListener('DOMContentLoaded', () => {
+  const audio = document.getElementById('audio');
+  const playPauseButton = document.querySelector('.play-pause');
+  const seekBar = document.querySelector('.seek-bar');
+  const currentTimeElement = document.querySelector('.current-time');
+  const durationElement = document.querySelector('.duration');
+
+  playPauseButton.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      playPauseButton.textContent = 'Pause';
+    } else {
+      audio.pause();
+      playPauseButton.textContent = 'Play';
+    }
+  });
+
+  audio.addEventListener('timeupdate', () => {
+    const currentTime = formatTime(audio.currentTime);
+    const duration = formatTime(audio.duration);
+    currentTimeElement.textContent = currentTime;
+    durationElement.textContent = duration;
+    seekBar.value = (audio.currentTime / audio.duration) * 100;
+  });
+
+  seekBar.addEventListener('input', () => {
+    audio.currentTime = (seekBar.value / 100) * audio.duration;
+  });
+
+  function formatTime(time) {
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time % 60).toString().padStart(2, '0');
+    return `${minutes}:${seconds}`;
+  }
+});

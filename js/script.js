@@ -10,7 +10,7 @@ function calculateAgeAndDays() {
     const minutesSinceSingle = Math.floor(timeSinceSingle / (1000 * 60));
     const secondsSinceSingle = Math.floor(timeSinceSingle / 1000);
 
-    updateCounter('age', `Age: ${age} years`);
+    updateCounter('age', `Age: ${age-1} years`);
     updateCounter('days-since-single', `Days since single: ${daysSinceSingle}`);
     updateCounter('hours-since-single', `Hours since single: ${hoursSinceSingle}`);
     updateCounter('minutes-since-single', `Minutes since single: ${minutesSinceSingle}`);

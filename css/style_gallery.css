@@ -18,7 +18,7 @@ body {
 #navbar {
     position: relative;
     z-index: 1000;
-    background-color: #111; /* Darker shade for navbar */
+    background-color: #111111; /* Darker shade for navbar */
 }
 
 .navbar-img {
@@ -72,8 +72,8 @@ body {
     padding: 40px 20px;
     border-radius: 15px; /* Rounded corners for the container */
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
-    max-width: 1000px;
-    margin: 40px auto; /* Center the container */
+    max-width: 1200px;
+    margin: 50px auto; /* Center the container */
 }
 
 .gallery-grid {
